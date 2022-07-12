@@ -6,12 +6,17 @@
     <div class="container">
       <div class="card" v-for="player in Players" :key="player" >
       <a href="">
+        <div id="playername"><h3>{{player.Fullname}}</h3></div>
+        <br>
         <img :src="player.img_URL">
-     <div>Name: {{player.Fullname}}</div>
-      <div>Age: {{player.Age}}</div>
-      <div>Gender: {{player.Gender}}</div>
-      <div>Current Club: {{player.Club}}</div>
-      <div>R{{player.Price}}</div>
+        <br>
+      <div><h4>Age: {{player.Age}}</h4> </div>
+      <br>
+      <div><h4>Gender: {{player.Gender}}</h4></div>
+      <br>
+      <div><h4>Club: {{player.Club}}</h4> </div>
+      <br>
+      <div><h4>R{{player.Price}}</h4></div>
       </a>
       </div>
     </div>
@@ -26,8 +31,13 @@
 }
 
 img{
-  width: 20px;
-height: 30px;
+  margin-top: 20px;
+  width: 282px;
+height: 300px;
+border-top: 2px solid brown;
+border-bottom: 2px solid brown;
+  border-radius: 5px;
+
 }
 
 a{
@@ -39,10 +49,6 @@ a:hover{
   color: rgb(255, 70, 70);
 }
 
-a::after
-{
-  color: rgb(172, 157, 157);
-}
 
 #view-all {
   text-align: center;
@@ -63,11 +69,16 @@ a::after
   flex-wrap:wrap;
 }
 
+#playername{
+  text-align: center;
+}
+
 .card {
+  text-align: start;
   margin: auto;
 background-color: burlywood;
-width: 290px;
-height: 110px;
+width: 280px;
+height: 515px;
 margin-top: 20px;
 margin-bottom: 20px;
 border: 2px solid brown;
