@@ -23,11 +23,6 @@ const routes = [
     component: () => import('../components/singleplayer.vue')
   },
   {
-    path: '/backtoplayer',
-    name: 'backtoplayer',
-    component: () => import('../views/Players.vue')
-  },
-  {
     path: '/admin',
     name: 'admin',
     component: () => import('../views/Admin.vue')

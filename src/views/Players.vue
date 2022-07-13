@@ -4,20 +4,135 @@
       <h1>Browse through our list of available Players</h1>
     </div>
     <div class="container">
-      <div class="card" v-for="player in Players" :key="player" >
-      <router-link to="/playerdetailes">
-        <div id="playername"><h3>{{player.Fullname}}</h3></div>
+       <div class="card">
+        <div id="playername"><h3>Cristiano Ronaldo</h3></div>
         <br>
-        <img :src="player.img_URL">
+        <img src="https://i.postimg.cc/8PBwf5kL/christiano.jpg">
         <br>
-      <div><h4>Age: {{player.Age}}</h4> </div>
+      <div><h4>Age: 37 </h4> </div>
       <br>
-      <div><h4>Gender: {{player.Gender}}</h4></div>
+      <div><h4>Gender: Male</h4></div>
       <br>
-      <div><h4>Club: {{player.Club}}</h4> </div>
+      <div><h4>Club: Manchester United F.C.</h4> </div>
       <br>
-      <div><h4>R{{player.Price}}</h4></div>
-      </router-link>
+      <div><h4>R 2275966335</h4></div>
+      </div>
+        <div class="card">
+        <div id="playername"><h3>Frenkie de Jong</h3></div>
+        <br>
+        <img src="https://i.postimg.cc/q7JSH4FX/frenkie.jpg">
+        <br>
+      <div><h4>Age: 25 </h4> </div>
+      <br>
+      <div><h4>Gender: Male</h4></div>
+      <br>
+      <div><h4>Club: FC Barcelona</h4> </div>
+      <br>
+      <div><h4>R 1419979252</h4></div>
+      </div>
+       <div class="card">
+        <div id="playername"><h3>Harry Maguire</h3></div>
+        <br>
+        <img src="https://i.postimg.cc/rw3jQckw/harryM.jpg">
+        <br>
+      <div><h4>Age: 29 </h4> </div>
+      <br>
+      <div><h4>Gender: Male</h4></div>
+      <br>
+      <div><h4>Club: Manchester United F.C.</h4> </div>
+      <br>
+      <div><h4>R1489311320</h4></div>
+      </div>
+       <div class="card">
+        <div id="playername"><h3>Romelu Lukaku</h3></div>
+        <br>
+        <img src="https://i.postimg.cc/vTTxJg7F/lukaku2.jpg">
+        <br>
+      <div><h4>Age: 29</h4> </div>
+      <br>
+      <div><h4>Gender: Male</h4></div>
+      <br>
+      <div><h4>Club: Belgium national football team</h4> </div>
+      <br>
+      <div><h4>R1971642075</h4></div>
+      </div>
+       <div class="card">
+        <div id="playername"><h3>Timo Werner</h3></div>
+        <br>
+        <img src="https://i.postimg.cc/901570sM/timo.jpg">
+        <br>
+      <div><h4>Age: 26</h4> </div>
+      <br>
+      <div><h4>Gender: Male</h4></div>
+      <br>
+      <div><h4>Club: Chelsea F.C.</h4> </div>
+      <br>
+      <div><h4>R959029283</h4></div>
+      </div>
+       <div class="card">
+        <div id="playername"><h3>Vivianne Miedema</h3></div>
+        <br>
+        <img src="https://i.postimg.cc/m2rKnb0Y/vivianne.jpg">
+        <br>
+      <div><h4>Age: 25</h4> </div>
+      <br>
+      <div><h4>Gender: Female</h4></div>
+      <br>
+      <div><h4>Club: Arsenal W.F.C.</h4> </div>
+      <br>
+      <div><h4>R6866315</h4></div>
+      </div>
+       <div class="card">
+        <div id="playername"><h3>Marta Vieira da Silva</h3></div>
+        <br>
+        <img src="https://i.postimg.cc/nM8V3C01/marta.jpg">
+        <br>
+      <div><h4>Age: 36</h4> </div>
+      <br>
+      <div><h4>Gender: Female</h4></div>
+      <br>
+      <div><h4>Club: Brazil women's national football team</h4> </div>
+      <br>
+      <div><h4>R6728538</h4></div>
+      </div>
+       <div class="card">
+        <div id="playername"><h3>Sam Kerr</h3></div>
+        <br>
+        <img src="https://i.postimg.cc/BQgQTQ22/sam.jpg">
+        <br>
+      <div><h4>Age: 28</h4> </div>
+      <br>
+      <div><h4>Gender: Female</h4></div>
+      <br>
+      <div><h4>Club: Chelsea F.C. Women</h4> </div>
+      <br>
+      <div><h4>R10162188</h4></div>
+      </div>
+       <div class="card">
+        <div id="playername"><h3>Mapi Leon</h3></div>
+        <br>
+        <img src="https://i.postimg.cc/SsTJfSBZ/maria.jpg">
+        <br>
+      <div><h4>Age: 27</h4> </div>
+      <br>
+      <div><h4>Gender: Female</h4></div>
+      <br>
+      <div><h4>Club: FC Barcelona Femení</h4> </div>
+      <br>
+      <div><h4>R16894014</h4></div>
+      </div>
+       <div class="card">
+        <div id="playername"><h3>Sakina Karchaoui</h3></div>
+        <br>
+        <img src="https://i.postimg.cc/rFLKGP32/sakina.jpg">
+        <br>
+      <div><h4>Age: 26</h4> </div>
+      <br>
+      <div><h4>Gender: Female</h4></div>
+      <br>
+      <div><h4>Club: Paris Saint-Germain Féminine</h4> </div>
+      <br>
+      <div><h4>R50610207</h4></div>
       </div>
     </div>
   </div>
@@ -27,99 +142,10 @@
 <script>
 export default {
   data(){
-    return{ 
- Players: [
-    {
-      Fullname: "Cristiano Ronaldo",
-      Age: 37,
-      img_URL: 'https://i.postimg.cc/8PBwf5kL/christiano.jpg',
-      Gender: "Male",
-      Club: "Manchester United F.C.",
-      Price: 2275966335,
-    },
-    {
-      Fullname: "Frenkie de Jong",
-      Age: 25,
-      img_URL:'https://i.postimg.cc/q7JSH4FX/frenkie.jpg',
-      Gender: "Male",
-      Club: "FC Barcelona",
-      Price: 1419979252,
-    },
-    {
-      Fullname: "Harry Maguire",
-      Age: 29,
-      img_URL:'https://i.postimg.cc/rw3jQckw/harryM.jpg',
-      Gender: "Male",
-      Club: "Manchester United F.C.",
-      Price: 1489311320,
-    },
-    {
-      Fullname: "Romelu Lukaku",
-      Age: 29,
-    img_URL:'https://i.postimg.cc/vTTxJg7F/lukaku2.jpg',
-      Gender: "Male",
-      Club: "Belgium national football team",
-      Price: 1971642075,
-    },
-    {
-      Fullname: "Timo Werner",
-      Age: 26,
-      img_URL:'https://i.postimg.cc/901570sM/timo.jpg',
-      Gender: "Male",
-      Club: "Chelsea F.C.",
-      Price: 959029283,
-    },
-    {
-      Fullname: "Vivianne Miedema",
-      Age: 25,
-      img_URL:'https://i.postimg.cc/m2rKnb0Y/vivianne.jpg', 
-      Gender: "Female",
-      Club: "Arsenal W.F.C.",
-      Price: 6866315,
-    },
-    {
-      Fullname: "Marta Vieira da Silva",
-      Age: 36,
-      img_URL:'https://i.postimg.cc/nM8V3C01/marta.jpg',
-      Gender: "Female",
-      Club: "Brazil women's national football team",
-      Price: 6728538,
-    },
-    {
-      Fullname: "Sam Kerr",
-      Age: 28,
-      img_URL:'https://i.postimg.cc/BQgQTQ22/sam.jpg', 
-      Gender: "Female",
-      Club: "Chelsea F.C. Women",
-      Price: 10162188,
-    },
-    {
-      Fullname: "Mapi Leon",
-      Age: 27,
-      img_URL:'https://i.postimg.cc/SsTJfSBZ/maria.jpg',
-      Gender: "Female",
-      Club: "FC Barcelona Femení",
-      Price: 16894014,
-    },
-    {
-      Fullname: "Sakina Karchaoui",
-      Age: 26,
-      img_URL:'https://i.postimg.cc/rFLKGP32/sakina.jpg',
-      Gender: "Female",
-      Club: "Paris Saint-Germain Féminine",
-      Price: 50610207,
-    },
-  ]
-    }
-  },
-  methods: {
-    playdetails() {
-      this.$router.push({name: 'playerdetailes'})
-    }
+    return{}
 
-  }
  
-};
+}};
 </script>
 
 <style>
