@@ -5,7 +5,7 @@
     </div>
     <div class="container">
       <div class="card" v-for="player in Players" :key="player" >
-      <a href="">
+      <router-link to="/playerdetailes">
         <div id="playername"><h3>{{player.Fullname}}</h3></div>
         <br>
         <img :src="player.img_URL">
@@ -17,75 +17,12 @@
       <div><h4>Club: {{player.Club}}</h4> </div>
       <br>
       <div><h4>R{{player.Price}}</h4></div>
-      </a>
+      </router-link>
       </div>
     </div>
   </div>
 </template>
 
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  
-}
-
-img{
-  margin-top: 20px;
-  width: 282px;
-height: 300px;
-border-top: 2px solid brown;
-border-bottom: 2px solid brown;
-  border-radius: 5px;
-
-}
-
-a{
-  text-decoration: none;
-  color: brown;
-}
-
-a:hover{
-  color: rgb(255, 70, 70);
-}
-
-
-#view-all {
-  text-align: center;
- 
-}
-
-#Title {
-  background-color: burlywood;
-  border: 2px solid brown;
-  border-radius: 5px;
-  color: brown;
-}
-
-.container
-{
-  display: flex;
-  flex-direction: row;
-  flex-wrap:wrap;
-}
-
-#playername{
-  text-align: center;
-}
-
-.card {
-  text-align: start;
-  margin: auto;
-background-color: burlywood;
-width: 280px;
-height: 515px;
-margin-top: 20px;
-margin-bottom: 20px;
-border: 2px solid brown;
-  border-radius: 5px;
-}
-
-</style>
 
 <script>
 export default {
@@ -174,7 +111,77 @@ export default {
     },
   ]
     }
+  },
+  methods: {
+    playdetails() {
+      this.$router.push({name: 'playerdetailes'})
+    }
+
   }
  
 };
 </script>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+img{
+  margin-top: 20px;
+  width: 282px;
+height: 300px;
+border-top: 2px solid brown;
+border-bottom: 2px solid brown;
+  border-radius: 5px;
+
+}
+
+a{
+  text-decoration: none;
+  color: brown;
+}
+
+a:hover{
+  color: rgb(255, 70, 70);
+}
+
+
+#view-all {
+  text-align: center;
+ 
+}
+
+#Title {
+  background-color: burlywood;
+  border: 2px solid brown;
+  border-radius: 5px;
+  color: brown;
+}
+
+.container
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+#playername{
+  text-align: center;
+}
+
+.card {
+  text-align: start;
+  margin: auto;
+background-color: burlywood;
+width: 280px;
+height: 515px;
+margin-top: 20px;
+margin-bottom: 20px;
+border: 2px solid brown;
+  border-radius: 5px;
+}
+
+</style>
