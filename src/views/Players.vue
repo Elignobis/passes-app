@@ -5,6 +5,7 @@
     </div>
     <div class="container">
        <div class="card">
+        <router-link to="CristianoRonaldo">
         <div id="playername"><h3>Cristiano Ronaldo</h3></div>
         <br>
         <img src="https://i.postimg.cc/8PBwf5kL/christiano.jpg">
@@ -16,8 +17,10 @@
       <div><h4>Club: Manchester United F.C.</h4> </div>
       <br>
       <div><h4>R 2275966335</h4></div>
+        </router-link>
       </div>
         <div class="card">
+          <router-link to="FrenkiedeJong">
         <div id="playername"><h3>Frenkie de Jong</h3></div>
         <br>
         <img src="https://i.postimg.cc/q7JSH4FX/frenkie.jpg">
@@ -29,8 +32,10 @@
       <div><h4>Club: FC Barcelona</h4> </div>
       <br>
       <div><h4>R 1419979252</h4></div>
+          </router-link>
       </div>
        <div class="card">
+        <router-link to="HarryMaguire">
         <div id="playername"><h3>Harry Maguire</h3></div>
         <br>
         <img src="https://i.postimg.cc/rw3jQckw/harryM.jpg">
@@ -42,8 +47,10 @@
       <div><h4>Club: Manchester United F.C.</h4> </div>
       <br>
       <div><h4>R1489311320</h4></div>
+        </router-link>
       </div>
        <div class="card">
+        <router-link to="RomeluLukaku">
         <div id="playername"><h3>Romelu Lukaku</h3></div>
         <br>
         <img src="https://i.postimg.cc/vTTxJg7F/lukaku2.jpg">
@@ -55,8 +62,10 @@
       <div><h4>Club: Belgium national football team</h4> </div>
       <br>
       <div><h4>R1971642075</h4></div>
+      </router-link>
       </div>
        <div class="card">
+        <router-link to="TimoWerner">
         <div id="playername"><h3>Timo Werner</h3></div>
         <br>
         <img src="https://i.postimg.cc/901570sM/timo.jpg">
@@ -68,8 +77,10 @@
       <div><h4>Club: Chelsea F.C.</h4> </div>
       <br>
       <div><h4>R959029283</h4></div>
+      </router-link>
       </div>
        <div class="card">
+        <router-link to="VivianneMiedema">
         <div id="playername"><h3>Vivianne Miedema</h3></div>
         <br>
         <img src="https://i.postimg.cc/m2rKnb0Y/vivianne.jpg">
@@ -81,8 +92,10 @@
       <div><h4>Club: Arsenal W.F.C.</h4> </div>
       <br>
       <div><h4>R6866315</h4></div>
+      </router-link>
       </div>
        <div class="card">
+        <router-link to="MartaVieiradaSilva">
         <div id="playername"><h3>Marta Vieira da Silva</h3></div>
         <br>
         <img src="https://i.postimg.cc/nM8V3C01/marta.jpg">
@@ -94,8 +107,10 @@
       <div><h4>Club: Brazil women's national football team</h4> </div>
       <br>
       <div><h4>R6728538</h4></div>
+      </router-link>
       </div>
        <div class="card">
+        <router-link to="SamKerr">
         <div id="playername"><h3>Sam Kerr</h3></div>
         <br>
         <img src="https://i.postimg.cc/BQgQTQ22/sam.jpg">
@@ -107,8 +122,10 @@
       <div><h4>Club: Chelsea F.C. Women</h4> </div>
       <br>
       <div><h4>R10162188</h4></div>
+      </router-link>
       </div>
        <div class="card">
+        <router-link to="MapiLeon">
         <div id="playername"><h3>Mapi Leon</h3></div>
         <br>
         <img src="https://i.postimg.cc/SsTJfSBZ/maria.jpg">
@@ -120,8 +137,10 @@
       <div><h4>Club: FC Barcelona Femení</h4> </div>
       <br>
       <div><h4>R16894014</h4></div>
+      </router-link>
       </div>
        <div class="card">
+        <router-link to="SakinaKarchaouiG">
         <div id="playername"><h3>Sakina Karchaoui</h3></div>
         <br>
         <img src="https://i.postimg.cc/rFLKGP32/sakina.jpg">
@@ -133,6 +152,7 @@
       <div><h4>Club: Paris Saint-Germain Féminine</h4> </div>
       <br>
       <div><h4>R50610207</h4></div>
+      </router-link>
       </div>
     </div>
   </div>
