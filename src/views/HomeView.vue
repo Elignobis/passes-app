@@ -1,4 +1,5 @@
 <template>
+    <div class="large">
   <div id="back">
     <div class="backLeft">
       <h1 id="heading">
@@ -44,9 +45,40 @@
       </div>
     </div>
   </div>
+  </div>
+  <div class="mobile">
+
+    <div id="overlay">
+      <h1 id="heading">
+        welcome to,
+        <br />
+      <div id="landing">
+        <span id="landingletters">P</span>
+        <span id="landingletters">A</span>
+        <span id="landingletters">S</span>
+        <span id="landingletters">S</span>
+        <span id="landingletters">E</span>
+        <span id="landingletters">S</span>
+      </div>
+      </h1>
+    </div>
+        <div id="originalDiv">
+      <div class="gallery">
+        <img src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-04/cristiano-ronaldo-04092022-ftr-getty.jpg?itok=J_zpPbPd" alt="a house on the mountain">
+        <img src="https://cdn.givemesport.com/wp-content/uploads/2022/05/vivianne-miedema-arsenal-scaled.jpg" alt="another house">
+        <img src="https://reddevilarmada.com/wp-content/uploads/getty-images/2017/07/1395983569-1.jpeg" alt="a big building">
+        <img src="https://i.guim.co.uk/img/media/5fc890e929bfb00e913be053581723cace103cc6/0_155_2333_1400/master/2333.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=e8d28cea15a2e0ecfc9cb655c2e17d3d" alt="a small road between two houses">
+        <img src="https://e0.365dm.com/21/02/2048x1152/skysports-romelu-lukaku-inter-milan_5280555.jpg" alt="a modern city">
+        <img src="https://64.media.tumblr.com/69bbbc566b3783c6bc1253865c48704d/bb46a5db0984fe0c-dd/s540x810/bf9a9fe01963d8c4ac1fb5a6c4f7ff9549aa54b9.jpg" alt="a lot of old houses">
+      </div>
+    </div>
+  </div>
 </template>
 
 <style>
+.mobile{
+  display: none;
+}
 body {
   height: 100%;
   overflow: hidden;
@@ -76,7 +108,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  width: 100%;
   text-align: center;
   color: white;
 }
@@ -125,7 +157,7 @@ body {
   width: 100%;
   margin: 0 auto;
   position: absolute;
-  top: 10%;
+  /* top: 10%; */
   left: 50%;
   margin-left: -35%;
 }
@@ -175,7 +207,7 @@ input {
 }
 .card {
   display: flex;
-  height: 280px;
+  height: 50vh;
   width: 130px;
   background-color: #2f363e;
   border-radius: 10px;
@@ -242,6 +274,104 @@ input {
   left: 20%;
   top: 30%;
 }
+
+ @media only screen and (max-width: 600px){
+  .mobile{
+    display: grid;
+  }
+
+  body {
+  margin: 0;
+  /* padding-left: 5%;
+  padding-right: 5%; */
+  min-height: 100vh;
+  display: grid;
+  /* place-content: center; */
+  justify-content: center;
+  background: #2c3e50;
+  /* overflow: hidden; */
+}
+
+  .large{
+    display: none;
+  }
+  .gallery {
+  display: grid;
+  gap: 10px; 
+  grid-template-columns: auto 0 auto;
+  place-items: center;
+  /* overflow: hidden; */
+}
+.gallery > img {
+  width: 30rem; /* control the size */
+  aspect-ratio: 1;
+  object-fit: cover;
+  transition: .35s;
+  filter: grayscale();
+  cursor: pointer;
+}
+.gallery > img:hover {
+  filter: grayscale(0%);
+}
+
+.gallery > img:nth-child(1) {
+  clip-path: polygon(0 0,50% 0,100% 100%,0 100%);
+}
+.gallery > img:nth-child(2) {
+  clip-path: polygon(0 0,100% 0,50% 100%);
+}
+.gallery > img:nth-child(3) {
+  clip-path: polygon(50% 0,100% 0,100% 100%,0 100%);
+}
+.gallery > img:nth-child(4) {
+  clip-path: polygon(0 0,100% 0,50% 100%,0 100%);
+}
+.gallery > img:nth-child(5) {
+  clip-path: polygon(50% 0,100% 100%,0% 100%);
+}
+.gallery > img:nth-child(6) {
+  clip-path: polygon(0 0,100% 0,100% 100%,50% 100%);
+}
+
+#landing {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  color: white;
+}
+
+#landingletters {
+  font-size: 14vw;
+  font-weight: 800;
+  text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.9);
+}
+
+#landingletters:not(:first-child) {
+  margin-left: -0.23em;
+}
+#overlay {
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+  position:absolute;
+  top:50px;
+  left:50px;
+}
+
+#originalDiv {
+  width: 100px;
+  height: 100px;
+  z-index: 0;
+  position:absolute;
+  top:0px;
+  left:0px;
+}
+}
+
+
 </style>
 
 <script></script>
