@@ -16,7 +16,7 @@
       <br>
       <div><h4>Club: Manchester United F.C.</h4> </div>
       <br>
-      <div><h4>R 2275966335</h4></div>
+      <div><h4>Contract Price: R 2275966335</h4></div>
         </router-link>
       </div>
         <div class="card">
@@ -31,7 +31,7 @@
       <br>
       <div><h4>Club: FC Barcelona</h4> </div>
       <br>
-      <div><h4>R 1419979252</h4></div>
+      <div><h4>Contract Price: R 1419979252</h4></div>
           </router-link>
       </div>
        <div class="card">
@@ -46,7 +46,7 @@
       <br>
       <div><h4>Club: Manchester United F.C.</h4> </div>
       <br>
-      <div><h4>R1489311320</h4></div>
+      <div><h4>Contract Price: R1489311320</h4></div>
         </router-link>
       </div>
        <div class="card">
@@ -61,7 +61,7 @@
       <br>
       <div><h4>Club: Belgium national football team</h4> </div>
       <br>
-      <div><h4>R1971642075</h4></div>
+      <div><h4>Contract Price: R1971642075</h4></div>
       </router-link>
       </div>
        <div class="card">
@@ -76,7 +76,7 @@
       <br>
       <div><h4>Club: Chelsea F.C.</h4> </div>
       <br>
-      <div><h4>R959029283</h4></div>
+      <div><h4>Contract Price: R959029283</h4></div>
       </router-link>
       </div>
        <div class="card">
@@ -91,7 +91,7 @@
       <br>
       <div><h4>Club: Arsenal W.F.C.</h4> </div>
       <br>
-      <div><h4>R6866315</h4></div>
+      <div><h4>Contract Price: R6866315</h4></div>
       </router-link>
       </div>
        <div class="card">
@@ -106,7 +106,7 @@
       <br>
       <div><h4>Club: Brazil women's national football team</h4> </div>
       <br>
-      <div><h4>R6728538</h4></div>
+      <div><h4>Contract Price: R6728538</h4></div>
       </router-link>
       </div>
        <div class="card">
@@ -121,7 +121,7 @@
       <br>
       <div><h4>Club: Chelsea F.C. Women</h4> </div>
       <br>
-      <div><h4>R10162188</h4></div>
+      <div><h4>Contract Price: R10162188</h4></div>
       </router-link>
       </div>
        <div class="card">
@@ -136,11 +136,11 @@
       <br>
       <div><h4>Club: FC Barcelona Femení</h4> </div>
       <br>
-      <div><h4>R16894014</h4></div>
+      <div><h4>Contract Price: R16894014</h4></div>
       </router-link>
       </div>
        <div class="card">
-        <router-link to="SakinaKarchaouiG">
+        <router-link to="SakinaKarchaoui">
         <div id="playername"><h3>Sakina Karchaoui</h3></div>
         <br>
         <img src="https://i.postimg.cc/rFLKGP32/sakina.jpg">
@@ -151,7 +151,7 @@
       <br>
       <div><h4>Club: Paris Saint-Germain Féminine</h4> </div>
       <br>
-      <div><h4>R50610207</h4></div>
+      <div><h4>Contract Price: R50610207</h4></div>
       </router-link>
       </div>
     </div>
@@ -182,6 +182,7 @@ height: 300px;
 border-top: 2px solid brown;
 border-bottom: 2px solid brown;
   border-radius: 5px;
+  object-fit: cover;
 
 }
 
