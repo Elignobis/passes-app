@@ -18,54 +18,10 @@ const routes = [
     component: () => import('../views/Players.vue')
   },
   {
-    path: '/CristianoRonaldo',
-    name: 'CristianoRonaldo',
-    component: () => import('../components/CristianoRonaldo.vue')
-  },
-  {
-    path: '/FrenkiedeJong',
-    name: 'FrenkiedeJong',
-    component: () => import('../components/FrenkiedeJong.vue')
-  },
-  {
-    path: '/HarryMaguire',
-    name: 'HarryMaguire',
-    component: () => import('../components/HarryMaguire.vue')
-  },
-  {
-    path: '/RomeluLukaku',
-    name: 'RomeluLukaku',
-    component: () => import('../components/RomeluLukaku.vue')
-  },
-  {
-    path: '/TimoWerner',
-    name: 'TimoWerner',
-    component: () => import('../components/TimoWerner.vue')
-  },
-  {
-    path: '/VivianneMiedema',
-    name: 'VivianneMiedema',
-    component: () => import('../components/VivianneMiedema.vue')
-  },
-  {
-    path: '/MartaVieiradaSilva',
-    name: 'MartaVieiradaSilva',
-    component: () => import('../components/MartaVieiradaSilva.vue')
-  },
-  {
-    path: '/SamKerr',
-    name: 'SamKerr',
-    component: () => import('../components/SamKerr.vue')
-  },
-  {
-    path: '/MapiLeon',
-    name: 'MapiLeon',
-    component: () => import('../components/MapiLeon.vue')
-  },
-  {
-    path: '/SakinaKarchaoui',
-    name: 'SakinaKarchaoui',
-    component: () => import('../components/SakinaKarchaoui.vue')
+    path: '/players/:id',
+    name: 'SinglePlayer',
+    component: () => import('../components/SinglePlayer.vue'),
+    props: true
   },
   {
     path: '/admin',
