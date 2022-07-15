@@ -7,41 +7,41 @@
     </router-link>
     <div id="fullplayerbox">
       <div id="playerimage">
-        <img :src="player.img_URL" :alt="player.name" />
+        <img :src="player.img_URL" :alt="player.name" id="picture"/>
       </div>
       <div id="playerbox">
-<div id="playername">
-        <h3>Player Name:</h3>
-        <br>
-        <h2>{{ player.name }}</h2>
+        <div class="playerdetails">
+          <h2>Player Name:</h2>
+          <br>
+          <h1>{{ player.name }}</h1>
+        </div>
+        <div class="playerdetails">
+          <h2>Age:</h2>
+          <br>
+          <h1>{{ player.age }}</h1>
+        </div>
+        <div class="playerdetails">
+          <h2>Gender:</h2>
+          <br>
+          <h1>{{ player.gender }}</h1>
+        </div>
+        <div class="playerdetails">
+          <h2>Current Team:</h2>
+          <br>
+          <h1>{{ player.currrentClub }}</h1>
+        </div>
+        <div class="playerdetails">
+          <h2>National Team:</h2>
+          <br>
+          <h1>{{ player.nationalTeam }}</h1>
+        </div>
+        <div class="playerdetails">
+          <h2>Contract Price</h2>
+          <br>
+          <h1>R{{ player.price }}</h1>
+        </div>
       </div>
-      <div id="playerage">
-        <h3>Age:</h3>
-        <br>
-        <h2>{{ player.age }}</h2>
-      </div>
-<div id="playergender">
-  <h3>Gender:</h3>
-  <br>
-<h2>{{ player.gender }}</h2>
-</div>
-      <div id="currentteam">
-        <h3>Current Team:</h3>
-        <br>
-<h2>{{ player.currrentClub }}</h2>
-      </div>
-      <div id="nationalteam">
-        <h3>National Team:</h3>
-        <br>
-<h2>{{ player.nationalTeam }}</h2>
-      </div>
-      <div id="playerprice">
-        <h3>Contract Price</h3>
-        <br>
- <h2>R: {{ player.price }}</h2>
-      </div>
-      </div>
-      
+
     </div>
   </div>
 </template>
@@ -63,21 +63,35 @@ export default {
 
 
 <style>
+.single{
+    text-align: center;
+  background-color:rgb(8, 8, 101) ;
+}
+
 .backbutton {
   margin: auto;
-  background-color: burlywood;
+  background-color: rgb(53, 53, 155) ;
   width: 100px;
   height: 35px;
-  border: 2px solid brown;
+  border: 2px solid lightblue;
   border-radius: 5px;
-  margin-bottom: 30px;
+  color: white;
+  margin-top: 20px;
+text-decoration: none;
 }
 
 #fullplayerbox {
   display: flex;
-  background-color: burlywood;
-  border: 2px solid brown;
+  flex-direction: row;
+  background-color: rgb(59, 59, 223);
+   border: 2px solid lightblue;
   border-radius: 5px;
+}
+
+#picture
+{
+  width: 340px;
+  height: 633px;
 }
 
 #playerimage {
@@ -90,60 +104,44 @@ export default {
   flex-wrap: wrap;
 }
 
-#playername {
-  background-color: gainsboro;
-  border: 2px solid brown;
+.playerdetails{
+  background-color: rgb(53, 53, 155);
+   border: 2px solid lightblue;
   border-radius: 5px;
-  width: 220px;
-  height: 90px;
+  width: 1148px;
+  height: 100px;
   margin-right: 2px;
+  color: lightblue;
 }
 
-#playerage {
-  background-color: gainsboro;
-  border: 2px solid brown;
-  border-radius: 5px;
-   width: 220px;
-  height: 90px;
-  margin-right: 2px;
+.playerdetails:hover{
+  background-color: lightblue;
+  color: rgb(53, 53, 155);
 }
 
-#playergender
-{
-   background-color: gainsboro;
-  border: 2px solid brown;
-  border-radius: 5px;
-   width: 220px;
-  height: 90px;
-  margin-right: 2px;
+@media only screen and (min-width: 374px) and (max-width:776px){
+ 
+#picture{
+  width: 375px;
+  margin: auto;
 }
 
-#currentteam
-{
-    background-color: gainsboro;
-  border: 2px solid brown;
-  border-radius: 5px;
-   width: 220px;
-  height: 90px;
-  margin-right: 2px; 
+#fullplayerbox{
+  display: flex;
+  flex-direction: column;
 }
 
-#nationalteam
-{
-      background-color: gainsboro;
-  border: 2px solid brown;
-  border-radius: 5px;
-   width: 341px;
-  height: 90px;
-  margin-right: 2px; 
+.playerdetails{
+  font-size: 0.7rem;
+  font-weight:bold;
 }
 
-#playerprice{
-        background-color: gainsboro;
-  border: 2px solid brown;
-  border-radius: 5px;
-   width: 1245px;
-  height: 205Gpx;
-  margin-right: 2px;
+.playerdetails:hover{
+  background-color: lightblue;
+  color: rgb(53, 53, 155);
 }
+
+}
+
+
 </style>
