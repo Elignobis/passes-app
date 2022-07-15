@@ -6,26 +6,14 @@
     <div class="container">
       <div v-for="player in players" :key="player" class="card">
         <router-link :to="{name: 'SinglePlayer', params:{id: player.id}}">
-          <div id="playername" class="name">
-            <h3>{{ player.name }}</h3>
+          <div id="playersname" class="name">
+            <h2>{{ player.name }}</h2>
           </div>
           <br />
             <img :src="player.img_URL" />
           <br />
-          <div>
-            <h4>Age: {{ player.age }}</h4>
-          </div>
-          <br />
-          <div>
-            <h4>Gender: {{ player.gender }}</h4>
-          </div>
-          <br />
-          <div>
-            <h4>Club: {{ player.currrentClub }}</h4>
-          </div>
-          <br />
-          <div>
-            <h4>Contract Price: R{{ player.price }}</h4>
+          <div id="Price">
+            <h3>Contract Price:<br>R{{ player.price }}</h3>
           </div>
         </router-link>
       </div>
@@ -54,7 +42,6 @@ export default {
 }
 
 img {
-  margin-top: 20px;
   width: 240px;
   height: 300px;
   border-top: 2px solid brown;
@@ -89,7 +76,7 @@ a:hover {
   flex-wrap: wrap;
 }
 
-#playername {
+#playersname {
   text-align: center;
 }
 
@@ -98,11 +85,15 @@ a:hover {
   margin: auto;
   background-color: burlywood;
   width: 240px;
-  height: 515px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  height: 410px;
+  margin-top: 10px;
+  margin-left: 2.5px;
   border: 2px solid brown;
   border-radius: 5px;
+}
+
+#Price{
+  text-align: center;
 }
 
 </style>
