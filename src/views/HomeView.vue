@@ -20,8 +20,10 @@
   <div id="slideBox">
     <div class="topLayer">
       <div class="right">
-        <div class="content">
+        <div class="heading">
           <h2>Top Prospects:</h2>
+        </div>
+        <div class="content">
           <div class="container">
             <a href="">
               <div class="card" id="ronaldo"></div>
@@ -60,6 +62,12 @@
         <span id="landingletters">E</span>
         <span id="landingletters">S</span>
       </div>
+      <a href="/about">
+            <button id="login" type="submit">About Us</button>
+          </a>
+          <a href="/contact">
+            <button id="login" type="submit">Contact Us</button>
+          </a>
       </h1>
     </div>
         <div id="originalDiv">
@@ -143,7 +151,6 @@ body {
   width: 200%;
   height: 100%;
   position: relative;
-  left: 0;
   left: -100%;
 }
 .right {
@@ -161,10 +168,11 @@ body {
   left: 50%;
   margin-left: -35%;
 }
-.content h2 {
+.heading {
   color: #03a9f4;
   font-weight: 300;
-  font-size: 35px;
+  font-size: 25px;
+  align-items: center;
 }
 
 button {
@@ -183,6 +191,7 @@ button {
   outline: 0;
   margin: 15px 15px 15px 0;
   transition: all 0.25s;
+  justify-content: center;
 }
 
 button:hover {
@@ -216,7 +225,9 @@ input {
   position: relative;
   left: 0px;
   cursor: pointer;
+  justify-content: center;
 }
+
 #ronaldo {
   background-image: linear-gradient(
       rgba(0, 0, 255, 0.296),
@@ -274,7 +285,32 @@ input {
   left: 20%;
   top: 30%;
 }
-
+@media only screen and (max-width: 1300px){
+  .content {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  /* top: 10%; */
+  left: 50%;
+  margin-left: -40%;
+}
+  #sam{
+    display: none;
+  }
+}
+  @media only screen and (max-width: 957px){
+    .content {
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  /* top: 10%; */
+  left: 50%;
+  margin-left: -30%;
+}
+#frenkie{
+  display: none;
+}
+  }
  @media only screen and (max-width: 600px){
   .mobile{
     display: grid;
@@ -282,14 +318,10 @@ input {
 
   body {
   margin: 0;
-  /* padding-left: 5%;
-  padding-right: 5%; */
   min-height: 100vh;
   display: grid;
-  /* place-content: center; */
-  justify-content: center;
   background: #2c3e50;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
   .large{
@@ -303,7 +335,7 @@ input {
   /* overflow: hidden; */
 }
 .gallery > img {
-  width: 30rem; /* control the size */
+  width: 25rem; /* control the size */
   aspect-ratio: 1;
   object-fit: cover;
   transition: .35s;
@@ -334,11 +366,7 @@ input {
 }
 
 #landing {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+  height: 50%;
   text-align: center;
   color: white;
 }
@@ -353,21 +381,17 @@ input {
   margin-left: -0.23em;
 }
 #overlay {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   z-index: 1;
   position:absolute;
-  top:50px;
-  left:50px;
 }
 
 #originalDiv {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   z-index: 0;
   position:absolute;
-  top:0px;
-  left:0px;
 }
 }
 
