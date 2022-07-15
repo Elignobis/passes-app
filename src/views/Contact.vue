@@ -1,21 +1,6 @@
 <template>
 
-<div class="card">
-  <div class="card__side card__side--front" id="front-1">
-    <div class="text-box">
-      <!-- <h3 class="text-box-lower">PASS</h3>
-      <h1 class="text-box-top">PASS?</h1> -->
-      <h3 class="text-box-middle">PASSES!!</h3>
-    </div>
-  </div>
-  <div class="card__side card__side--back" id="back-1">
-    <div class="text-box">
-      <h3 class="text-box-top">Cards Flipped</h3>
-      <h1 class="text-box-middle">Great!</h1>
-      <h3 class="text-box-lower">--- More Text ---</h3>
-    </div>
-  </div>
-</div> <br><br><br>
+
 
 
 <!-- <div class="contact">
@@ -39,6 +24,23 @@
   </div> -->
 
   <div class="container my-5">
+
+  <div class="card">
+  <div class="card__side card__side--front" id="front-1">
+    <div class="text-box">
+      <!-- <h3 class="text-box-lower">PASS</h3>
+      <h1 class="text-box-top">PASS?</h1> -->
+      <h3 class="text-box-middle">PASSES!!</h3>
+    </div>
+  </div>
+  <div class="card__side card__side--back" id="back-1">
+    <div class="text-box">
+      <h3 class="text-box-top">Cards Flipped</h3>
+      <h1 class="text-box-middle">Great!</h1>
+      <h3 class="text-box-lower">--- More Text ---</h3>
+    </div>
+  </div>
+</div> <br><br><br>
 
       <!-- Contact Google Style -->
 
@@ -126,13 +128,14 @@
 
 
 
-  <div class="container">
+  <!-- <div class="container">
     <h3 class="text-white">Find us on</h3>
-
-  </div>
+  </div> -->
 </template>
 
 <style>
+
+bod
 
 .container{
   background-color: #3333;
