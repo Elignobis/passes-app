@@ -116,6 +116,8 @@ body {
   text-align: center;
   color: white;
   background-color: #f0f0f0;
+  overflow-x: hidden;
+  overflow:auto;
 }
 h1 {
   margin-top: 40px;
